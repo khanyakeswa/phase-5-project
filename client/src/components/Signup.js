@@ -9,6 +9,14 @@ const Signup = () => {
       <p>Sign Up</p>
       <form>
         <div>
+          <label htmlFor='firstName'>E-mail</label>
+          <input type='text' name='firstName'></input>
+        </div>
+        <div>
+          <label htmlFor='lastName'>E-mail</label>
+          <input type='text' name='lastName'></input>
+        </div>
+        <div>
           <label htmlFor='email'>E-mail</label>
           <input type='email' name='email'></input>
         </div>
@@ -16,7 +24,11 @@ const Signup = () => {
           <label htmlFor='password'>Password</label>
           <input type='password' name='password'></input>
         </div>
-        <button type='submit'>Sign In</button>
+        <div>
+          <label htmlFor='confirmPassword'>Confirm Password</label>
+          <input type='password' name='confirmPassword'></input>
+        </div>
+        <button type='submit'>Sign Up</button>
       </form>
     </div>
   )

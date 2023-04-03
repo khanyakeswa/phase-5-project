@@ -5,9 +5,36 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: rgba(red, green, blue, .9);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .form-a {
+    @apply flex flex-col min-w-fit w-96 justify-center align-middle bg-white px-8 pt-6 pb-8
+  }
+  .input-a {
+    @apply appearance-none bg-gray-100 border-2 border-gray-200 rounded w-full py-2 px-4 mb-4 text-gray-700 leading-snug focus:outline-none focus:bg-white focus:border-red-400 hover:border-red-400 transition-all
+  }
+  .input-label-a {
+    @apply block pb-1
+  }
+  .button-a {
+    @apply bg-white shadow-sm hover:bg-red-400 hover:text-white border-2 border-red-400 transition-all min-w-fit w-fit px-4 py-2 rounded-sm
+  }
+  .component-wrapper {
+    @apply p-4 bg-white shadow-md h-fit
+  }
+
+  .component-title {
+    @apply text-red-400 font-semibold pl-8 text-xl pt-6
+  }
 }
