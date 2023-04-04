@@ -31,8 +31,8 @@ function App() {
   const updateUser = (user) => setCurrentUser(user)
 
   return (
-    <div className='w-full h-screen flex justify-center align-middle'>
-      <header className='absolute'>
+    <div className='w-full h-screen flex flex-col justify-center items-center'>
+      <header className='absolute left-0'>
         <Nav user={currentUser}/>
       </header>
       <Routes>
